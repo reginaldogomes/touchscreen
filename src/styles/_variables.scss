@@ -1,0 +1,32 @@
+// variables.scss
+
+// Fontes
+$font-family: "Arial", sans-serif;
+$base-font-size: 16px;
+
+// Cores
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$background-color: #ecf0f1;
+$text-color: #333;
+
+// Espaçamentos
+$spacing-unit: 8px;
+$margin-default: $spacing-unit;
+$padding-default: $spacing-unit;
+
+// Tamanhos
+$container-max-width: 1200px;
+$button-height: 40px;
+$input-height: 30px;
+
+// Z-index
+$z-index-modal: 1000;
+$z-index-overlay: 900;
+$z-index-header: 100;
+$z-index-footer: 100;
+
+// Bordas
+$border-radius: 4px;
+$border-width: 1px;

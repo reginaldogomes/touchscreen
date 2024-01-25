@@ -3,18 +3,21 @@ import viteLogo from '../public/images/vite.svg'
 import { setupCounter } from './components/counter'
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
+<header>Some content inside the header</header>
+<aside>A sidebar here</aside>
+<main> 
+  <section>Section 1</section>
+  <section>Section 2</section>
+  <section>Section 3</section>
+  <section>Section 4</section>
+  <section>Section 5</section>
+  <section>Section 6</section>
+  <section>Section 7</section>
+  <section>Section 8</section>
+  <section>Section 9</section>
+  <section>Section 10</section>
+</main>
+<footer>Some content inside the footer</footer>
 `
 
 setupCounter(document.querySelector('#counter'))
