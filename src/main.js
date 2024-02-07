@@ -3,21 +3,12 @@ import viteLogo from '../public/images/vite.svg'
 import { setupCounter } from './components/counter'
 
 document.querySelector('#app').innerHTML = `
-<header>Some content inside the header</header>
-<aside>A sidebar here</aside>
-<main> 
-  <section>Section 1</section>
-  <section>Section 2</section>
-  <section>Section 3</section>
-  <section>Section 4</section>
-  <section>Section 5</section>
-  <section>Section 6</section>
-  <section>Section 7</section>
-  <section>Section 8</section>
-  <section>Section 9</section>
-  <section>Section 10</section>
+<header>Header</header>
+<main>
+    <div class="col1">Coluna 1</div>
+    <div class="col2">Coluna 2 (Conteúdo Principal)</div>
+    <div class="col3">Coluna 3</div>
 </main>
-<footer>Some content inside the footer</footer>
-`
+<footer>Footer</footer>`
 
 setupCounter(document.querySelector('#counter'))

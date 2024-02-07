@@ -1,100 +1,31 @@
-#app {
-  width: 100vh;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import "./styles/variables";
 
-html {
-  display: grid;
-  height: 100%;
-}
+// Layout com Grid
 body {
-  --s: 200px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 0;
-  gap: 8px;
-  font-size: 1.2em;
+  min-height: 100vh;
 }
-body:has(main + aside) {
-  grid-template-columns: 1fr var(--s);
-}
-body:has(aside + main) {
-  grid-template-columns: var(--s) 1fr;
-}
-header {
-  grid-column: 1/-1;
-  background: red;
-  padding: 1em;
-}
+
 main {
-  --n: 2; /* the number of sections */
-  --g: 8px; /* the gap */
   display: grid;
-
-  gap: var(--g);
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% - (var(--n) - 1) * var(--g)) / var(--n));
-  grid-template-rows: repeat(2, 1fr);
-  scroll-snap-type: x mandatory;
-  overflow: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  height: 80vh;
 }
 
-main section {
-  padding: 1em;
-  background: lightblue;
-  scroll-snap-align: start;
-}
-aside {
-  background: orange;
-  padding: 1em;
-}
+header,
 footer {
-  grid-column: 1/-1;
-  background: green;
-  padding: 1em;
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
 }
 
-/* a small fallback in case has() is not supported */
-@supports not selector(:has(*)) {
-  body {
-    grid-template-columns: auto 1fr auto;
-  }
-  aside {
-    width: 200px;
-  }
-  main {
-    grid-column: span 2;
-  }
-  @media (max-width: 480px) {
-    aside {
-      width: auto;
-    }
-    main {
-      grid-column: span 1;
-    }
-  }
+.coluna {
+  background-color: $secondary-color;
+  padding: 15px;
+  border-radius: 5px;
 }
 
-@media (max-width: 767px) {
-  body {
-    --s: 150px;
-  }
-  main {
-    --n: 1;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    grid-template-columns: 1fr !important; /* one column */
-    grid-template-rows: none; /* no more template, keep the default behavior */
-    min-height: auto; /* put back the min-height restriction to move the scroll bar to the whole page */
-  }
-  main {
-    grid-auto-flow: row; /* we get back to a row flow */
-    grid-auto-rows: 1fr; /* all row equal in height*/
-  }
-}
+// Estilos adicionais conforme necessário
