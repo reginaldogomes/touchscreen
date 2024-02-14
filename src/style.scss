@@ -1,18 +1,7 @@
 @import "./styles/variables";
-
 // Layout com Grid
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-}
-
-main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
-  height: 80vh;
 }
 
 header,
@@ -20,12 +9,49 @@ footer {
   background-color: $primary-color;
   color: white;
   padding: 10px;
+  text-align: center;
+  font-size: 32px;
 }
 
-.coluna {
-  background-color: $secondary-color;
-  padding: 15px;
-  border-radius: 5px;
+main {
+  display: flex;
+  height: 80vh;
+}
+
+.col2 {
+  width: 60%;
+  text-align: center;
+  display: flex;
+}
+
+.col2 .cola,
+.colb {
+  width: 50%;
+  height: 100%;
+  background: grey;
+}
+
+.col1,
+.col3 {
+  width: 20%;
+  text-align: center;
+  background: green;
+}
+
+.divisione {
+  background: greenyellow;
+  min-height: 150px;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+
+.Funzioni {
+  background: greenyellow;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
 }
 
 // Estilos adicionais conforme necessário
