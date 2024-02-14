@@ -7,10 +7,14 @@ document.querySelector('body').innerHTML = `
 <main>
     <div class="col1">
         <div class="divisione">Divisioni</div>
+        <div class="categorias">Categorias</div>
     </div>
     <div class="col2">
-        <div class="cola">col2 col A</div>
-        <div class="colb">col2 col B</div>
+        <div class="cola">Prodotti/Elementi</div>
+        <div class="colb">
+            <div class="colb1">Scontrino</div>
+            <div class="colb2">Tasti numerici</div>
+        </div>
     </div>
     <div class="col3">
         <div class="Funzioni">Funzioni</div>

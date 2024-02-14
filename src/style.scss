@@ -24,11 +24,36 @@ main {
   display: flex;
 }
 
-.col2 .cola,
-.colb {
-  width: 50%;
+.cola {
+  display: flex;
+  width: 70%;
   height: 100%;
   background: grey;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+
+.colb {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 30%;
+  .colb1 {
+    display: flex;
+    flex-direction: column;
+    background: rgb(173, 173, 153);
+    height: 50%;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+  }
+  .colb2 {
+    display: flex;
+    flex-direction: column;
+    background: yellow;
+    height: 50%;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+  }
 }
 
 .col1,
@@ -44,6 +69,13 @@ main {
   display: flex;
   justify-content: center; /* Horizontal centering */
   align-items: center; /* Vertical centering */
+}
+
+.categorias {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100%;
 }
 
 .Funzioni {
