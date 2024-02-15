@@ -5,9 +5,9 @@ $font-family: "Arial", sans-serif;
 $base-font-size: 16px;
 
 // Cores
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
-$accent-color: #e74c3c;
+$primary: $primary-color;
+$secondary: $secondary-color;
+$accent-color: $accent-color;
 $background-color: #ecf0f1;
 $text-color: #333;
 

@@ -1,11 +1,12 @@
 // colors.scss
 
 // Defina as variáveis de cores
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
-$accent-color: #e74c3c;
+$primary-color: #fff;
+$secondary-color: #f8f8f8;
+$accent-color: #e06f2b;
 $background-color: #ecf0f1;
 $text-color: #333;
+$white-color: #fff;
 
 // Defina as variáveis para tons mais claros ou mais escuros
 $light-primary-color: lighten($primary-color, 10%);
