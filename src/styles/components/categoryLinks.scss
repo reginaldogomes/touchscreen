@@ -1,0 +1,23 @@
+/* path/filename: ./styles.css */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit; /* Adjust color as needed */
+  border: 1px solid #ccc; /* Adjust border as needed */
+  padding: 10px;
+  border-radius: 5px; /* Adjust border-radius as needed */
+}
+
+.grid-item i {
+  font-size: 24px; /* Adjust icon size as needed */
+}

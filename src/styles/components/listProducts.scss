@@ -1,0 +1,26 @@
+@import "../variables";
+
+.product-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 20px;
+}
+
+.product-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: $light-secondary-color;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product-button i {
+  font-size: 20px;
+}
