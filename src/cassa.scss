@@ -3,6 +3,7 @@
 :root {
   --primary-color: #fff;
   --secondary-color: #f8f8f8;
+  --tertiary-color: #fefefe;
   --accent-color: #e06f2b;
   --accent-color-alpha: rgba(224, 111, 42, 0.1);
 
@@ -21,6 +22,8 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   color: white;
   padding: 10px;
   text-align: left;
@@ -70,12 +73,13 @@ main {
 .divisioni {
   background-color: var(--accent-color-alpha);
   display: flex;
-  height: 250px;
+  height: 110px;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
   overflow-y: auto;
   border-radius: var(--border-radius);
+  padding: 5px 0 5px;
   max-height: 110px;
 }
 
@@ -90,11 +94,12 @@ main {
 .categorie {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   overflow-x: hidden;
   overflow-y: auto;
   border-radius: var(--border-radius);
+  background-color: var(--accent-color-alpha);
+  padding: 5px 0 5px;
 }
 
 .funzioni {
@@ -104,8 +109,15 @@ main {
   align-items: center;
 }
 
+.products {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 4px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 footer {
-  background-color: var(--primary-color);
   color: white;
   padding: 10px;
   text-align: center;
@@ -133,7 +145,7 @@ footer {
   display: flex;
   justify-content: flex-start; /* Aligns content to the left */
   gap: 10px; /* Adjust if necessary for different layouts */
-  font-size: 14px; /* Ensure font size consistency */
+  font-size: 16px; /* Ensure font size consistency */
   margin: 4px 2px; /* Review for consistent spacing */
   cursor: pointer;
   border-radius: var(
@@ -142,21 +154,6 @@ footer {
   min-width: 90%; /* Review for responsiveness */
   border: 1px solid var(--accent-color); /* Ensure border consistency */
 }
-
-// .button_cat {
-//   background: var(--accent-color-alpha);
-//   color: var(--accent-color);
-//   padding: 15px 32px;
-//   display: flex;
-//   justify-content: left;
-//   gap: 8px;
-//   font-size: 14px;
-//   margin: 4px 2px;
-//   cursor: pointer;
-//   border-radius: var(--border-radius);
-//   min-width: 90%;
-//   border: 1px solid var(--accent-color);
-// }
 
 .button_prod {
   background: var(--primary-color);
@@ -172,4 +169,8 @@ footer {
   min-width: 90%;
   border: 1px solid var(--border-color);
   gap: 10px;
+}
+
+.button_prod i {
+  font-size: 20px;
 }

@@ -8,7 +8,10 @@ import { funzioni } from './components/funzioni.js'
 import { tastiNumerici } from './components/tastiNumerici.js'
 
 document.querySelector('body').innerHTML = `
-<header>Cassa</header>
+<header>
+    <div class="titolo">Cassa</div>
+    <div class="operatore">Operador</div>
+</header>
 <main>
     <div class="col-left">
         <div class="divisioni" id="divisioni"></div>

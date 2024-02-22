@@ -5,17 +5,17 @@ import '../styles/components/categorie.scss'
 
 export function categorie() {
   const categories = [
-    { name: 'Pizza', icon: 'bi bi-pizza' },
-    { name: 'Burger', icon: 'bi bi-hamburger' },
+    { name: 'Pizza', icon: 'bi bi-cup-straw' },
+    { name: 'Burger', icon: 'bi bi-cup-straw' },
     { name: 'Salad', icon: 'bi bi-cup-straw' },
-    { name: 'Dessert', icon: 'bi bi-cupcake' },
-    { name: 'Burger', icon: 'bi bi-hamburger' },
+    { name: 'Dessert', icon: 'bi bi-cup-straw' },
+    { name: 'Burger', icon: 'bi bi-cup-straw' },
     { name: 'Salad', icon: 'bi bi-cup-straw' },
-    { name: 'Dessert', icon: 'bi bi-cupcake' },
-    { name: 'Burger', icon: 'bi bi-hamburger' },
+    { name: 'Dessert', icon: 'bi bi-cup-straw' },
+    { name: 'Burger', icon: 'bi bi-cup-straw' },
     { name: 'Salad', icon: 'bi bi-cup-straw' },
-    { name: 'Dessert', icon: 'bi bi-cupcake' },
-    { name: 'Beverage', icon: 'bi bi-cup-fill' }
+    { name: 'Dessert', icon: 'bi bi-cup-straw' },
+    { name: 'Beverage', icon: 'bi bi-cup-straw' }
   ];
 
   let html = '';

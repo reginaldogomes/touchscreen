@@ -6,7 +6,6 @@ import '../styles/components/divisioni.scss'
 export function divisioni() {
   const divisionis = [
     { name: 'Ristoranti', icon: 'bi bi-cup-fill' },
-    { name: 'Ristoranti', icon: 'bi bi-cup-fill' },
     { name: 'Mercado', icon: 'bi bi-cup-fill' }
   ];
 
