@@ -1,10 +1,10 @@
 // Define the product list creation function
 
-import '../styles/components/listProducts.scss'
+import '../styles/components/products.scss'
 
-export function listProducts(products) {
+export function products() {
 
-  const listProducts = [
+  const products = [
     { name: "Pizza", icon: "bi bi-emoji-smile" }, // Replace with appropriate icon class
     { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
     { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
@@ -42,7 +42,7 @@ export function listProducts(products) {
   // Start the list HTML
   let html = '<div class="product-grid">';
   // Loop through each product to create its button with an icon
-  listProducts.forEach(product => {
+  products.forEach(product => {
       html += `
           <button class="product-button">
               <i class="${product.icon}"></i> ${product.name}
@@ -52,6 +52,6 @@ export function listProducts(products) {
   // Close the container div
   html += '</div>';
 
-  document.getElementById('listProducts').innerHTML += html;
+  document.getElementById('products').innerHTML += html;
 }
 

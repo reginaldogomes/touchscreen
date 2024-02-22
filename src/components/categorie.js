@@ -1,9 +1,9 @@
 // path/filename: ./categoryLinks.js
 // Function to generate category links with Bootstrap Icons
 
-import '../styles/components/categoryLinks.scss'
+import '../styles/components/categorie.scss'
 
-export function categoryLinks() {
+export function categorie() {
   const categories = [
     { name: 'Pizza', icon: 'bi bi-pizza' },
     { name: 'Burger', icon: 'bi bi-hamburger' },
@@ -29,5 +29,5 @@ export function categoryLinks() {
   });
   html += '</div>';
 
-  document.getElementById('categoryLinks').innerHTML += html; // Append to the body or a specific element
+  document.getElementById('categorie').innerHTML += html; // Append to the body or a specific element
 }

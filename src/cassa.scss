@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #f8f8f8;
+  --accent-color: #e06f2b;
+  --accent-color-alpha: rgba(224, 111, 42, 0.1);
+
+  --border-radius: 8px;
+}
+
+body {
+  background: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--accent-color-alpha);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 32px;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  height: 80vh;
+}
+
+.col-center {
+  width: 80%;
+  text-align: center;
+  display: flex;
+}
+
+.left {
+  width: 70%;
+  height: 100%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 30%;
+  .lefta {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightb {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--primary-color);
+}
+
+.divisioni {
+  background-color: var(--accent-color-alpha);
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.col-left,
+.col-right {
+  width: 10%;
+  text-align: center;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.categorie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.funzioni {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.button_div {
+  background: var(--accent-color);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  border: 0;
+  min-width: 90%;
+}
+
+.button_cat {
+  background: var(--secondary-color);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
