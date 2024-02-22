@@ -18,16 +18,16 @@ export function categorie() {
     { name: 'Beverage', icon: 'bi bi-cup-fill' }
   ];
 
-  let html = '<div class="flex-container">';
+  let html = '';
   categories.forEach(category => {
     html += `
-      <a href="#" class="grid-item">
+      <button class="button_cat">
         <i class="${category.icon}"></i>
         ${category.name}
-      </a>
+      </button>
     `;
   });
-  html += '</div>';
+  html += '';
 
   document.getElementById('categorie').innerHTML += html; // Append to the body or a specific element
 }

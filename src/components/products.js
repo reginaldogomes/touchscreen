@@ -44,7 +44,7 @@ export function products() {
   // Loop through each product to create its button with an icon
   products.forEach(product => {
       html += `
-          <button class="product-button">
+          <button class="button_prod">
               <i class="${product.icon}"></i> ${product.name}
           </button>
       `;
