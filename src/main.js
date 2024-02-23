@@ -1,7 +1,7 @@
 import './cassa.scss'
 // import viteLogo from '../public/images/vite.svg'
 import { categorie } from './components/categorie.js'
-import { products } from './components/products.js'
+import { prodotti } from './components/prodotti.js'
 import { divisioni } from './components/divisioni.js'
 import { scontrino } from './components/scontrino.js'
 import { funzioni } from './components/funzioni.js'
@@ -19,7 +19,7 @@ document.querySelector('body').innerHTML = `
     </div>
     <div class="col-center">
         <div class="left">
-            <div class="products" id="products"></div>
+            <div class="prodotti" id="prodotti"></div>
         </div>
         <div class="right">
             <div class="scontrino" id="scontrino"></div>
@@ -33,7 +33,7 @@ document.querySelector('body').innerHTML = `
 
 divisioni()
 categorie()
-products()
+prodotti()
 scontrino()
 funzioni()
 tastiNumerici()

@@ -2,9 +2,9 @@
 
 import '../styles/components/products.scss'
 
-export function products() {
+export function prodotti() {
 
-  const products = [
+  const prodotti = [
     { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
     { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
     { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
@@ -42,7 +42,7 @@ export function products() {
   // Start the list HTML
   let html = '';
   // Loop through each product to create its button with an icon
-  products.forEach(product => {
+  prodotti.forEach(product => {
       html += `
           <button class="button_prod">
               <i class="${product.icon}"></i> ${product.name}
@@ -52,6 +52,6 @@ export function products() {
   // Close the container div
   html += '';
 
-  document.getElementById('products').innerHTML += html;
+  document.getElementById('prodotti').innerHTML += html;
 }
 
