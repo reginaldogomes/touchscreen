@@ -14,7 +14,7 @@ export function funzioni() {
   // Loop through each product to create its button with an icon
   scontrinos.forEach(scontrino => {
       html += `
-          <button class="product-button">
+          <button class="button_cat">
               <i class="${scontrino.icon}"></i> ${scontrino.name}
           </button>
       `;

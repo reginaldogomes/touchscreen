@@ -36,7 +36,7 @@ main {
 }
 
 .col-center {
-  width: 80%;
+  width: 75%;
   display: flex;
 }
 
@@ -83,7 +83,13 @@ main {
   max-height: 110px;
 }
 
-.col-left,
+.col-left {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .col-right {
   width: 10%;
   display: flex;
@@ -105,6 +111,7 @@ main {
 .funzioni {
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -129,30 +136,37 @@ footer {
   color: white;
   padding: 15px 32px;
   text-align: center;
-  display: inline-block;
+  display: flex;
   font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: var(--border-radius);
   border: 0;
-  min-width: 90%;
+  max-width: 90%;
+  gap: 10px;
+}
+
+.button_div img {
+  width: 10%;
 }
 
 .button_cat {
   background: var(--accent-color-alpha);
   color: var(--accent-color);
-  padding: 15px 8px 15px 32px; /* Consider if specific top-right-bottom-left values are needed */
+  padding: 15px 8px 15px 32px;
   display: flex;
-  justify-content: flex-start; /* Aligns content to the left */
-  gap: 10px; /* Adjust if necessary for different layouts */
-  font-size: 16px; /* Ensure font size consistency */
-  margin: 4px 2px; /* Review for consistent spacing */
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
-  border-radius: var(
-    --border-radius
-  ); /* Ensure border-radius is consistent with design */
-  min-width: 90%; /* Review for responsiveness */
-  border: 1px solid var(--accent-color); /* Ensure border consistency */
+  border-radius: var(--border-radius);
+  max-width: 90%;
+  border: 1px solid var(--accent-color);
+}
+
+.button_cat img {
+  width: 10%;
 }
 
 .button_prod {
@@ -166,11 +180,11 @@ footer {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: var(--border-radius);
-  min-width: 90%;
+  max-width: 90%;
   border: 1px solid var(--border-color);
   gap: 10px;
 }
 
-.button_prod i {
-  font-size: 20px;
+.button_prod img {
+  width: 10%;
 }
