@@ -1,42 +1,70 @@
 // Define the product list creation function
 
 import '../styles/components/products.scss'
+import icon from '../../public/images/pasta.png'
+
 
 export function prodotti() {
 
   const prodotti = [
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Burger", icon: "bi bi-emoji-sunglasses" }, // Replace with appropriate icon class
-    { name: "Sushi", icon: "bi bi-emoji-heart-eyes" } // Replace with appropriate icon class
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
   ];
 
   // Start the list HTML
@@ -45,7 +73,7 @@ export function prodotti() {
   prodotti.forEach(product => {
       html += `
           <button class="button_prod">
-              <i class="${product.icon}"></i> ${product.name}
+              <img src="${product.icon}" /> ${product.name}
           </button>
       `;
   });

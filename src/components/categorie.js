@@ -1,28 +1,27 @@
-// path/filename: ./categoryLinks.js
-// Function to generate category links with Bootstrap Icons
-
 import '../styles/components/categorie.scss'
+import icon from '../../public/images/grid.svg'
+
 
 export function categorie() {
   const categories = [
-    { name: 'Pizza', icon: 'bi bi-cup-straw' },
-    { name: 'Burger', icon: 'bi bi-cup-straw' },
-    { name: 'Salad', icon: 'bi bi-cup-straw' },
-    { name: 'Dessert', icon: 'bi bi-cup-straw' },
-    { name: 'Burger', icon: 'bi bi-cup-straw' },
-    { name: 'Salad', icon: 'bi bi-cup-straw' },
-    { name: 'Dessert', icon: 'bi bi-cup-straw' },
-    { name: 'Burger', icon: 'bi bi-cup-straw' },
-    { name: 'Salad', icon: 'bi bi-cup-straw' },
-    { name: 'Dessert', icon: 'bi bi-cup-straw' },
-    { name: 'Beverage', icon: 'bi bi-cup-straw' }
+    { name: 'Pizza', icon: icon },
+    { name: 'Burger', icon: icon },
+    { name: 'Salad', icon: icon },
+    { name: 'Dessert', icon: icon },
+    { name: 'Burger', icon: icon },
+    { name: 'Salad', icon: icon },
+    { name: 'Dessert', icon: icon },
+    { name: 'Burger', icon: icon },
+    { name: 'Salad', icon: icon },
+    { name: 'Dessert', icon: icon },
+    { name: 'Beverage', icon: icon }
   ];
 
   let html = '';
   categories.forEach(category => {
     html += `
       <button class="button_cat">
-        <i class="${category.icon}"></i>
+        <img src="${category.icon}" />
         ${category.name}
       </button>
     `;

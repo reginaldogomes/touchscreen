@@ -2,17 +2,20 @@
 // Function to generate category links with Bootstrap Icons
 
 import '../styles/components/divisioni.scss'
+import icon from '../../public/images/grid.svg'
+
 
 export function divisioni() {
   const divisionis = [
-    { name: 'Ristoranti', icon: 'bi bi-cup-fill' },
-    { name: 'Mercado', icon: 'bi bi-cup-fill' }
+    { name: 'Ristoranti', icon: icon },
+    { name: 'Ristoranti', icon: icon },
+    { name: 'Mercado', icon: icon }
   ];
 
   let html = '';
   divisionis.forEach(divisioni => {
     html += `
-      <button class="button_div"> <i class="${divisioni.icon}"></i> ${divisioni.name}</button>
+      <button class="button_div"> <img src="${divisioni.icon}" /> ${divisioni.name}</button>
     `;
   });
   html += '';

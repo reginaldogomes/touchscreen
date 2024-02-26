@@ -1,26 +1,35 @@
 // Define the product list creation function
 
 import '../styles/components/scontrino.scss'
+import icon from '../../public/images/grid.svg'
 
 export function scontrino() {
 
   const scontrinos = [
-    { name: "Pizza", icon: "bi bi-emoji-smile" }, // Replace with appropriate icon class
-    { name: "Sushi", icon: "bi bi-emoji-heart-eyes" } // Replace with appropriate icon class
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
+    { name: "Burger", icon: icon, value:"R$ 150,00" },
   ];
 
   // Start the list HTML
-  let html = '<div class="product-grid">';
+  let html = '<ul class="cart-list">';
   // Loop through each product to create its button with an icon
   scontrinos.forEach(scontrino => {
       html += `
-          <button class="product-button">
-              <i class="${scontrino.icon}"></i> ${scontrino.name}
-          </button>
+        <li class="cart-item">
+          <div class="cart-item-details">
+              <span>${scontrino.name}</span>
+              <span>${scontrino.value}</span>
+          </div>
+          <div class="cart-item-actions">
+              <button class="remove-btn">
+                <i class="bi bi-trash"></i>
+              </button>
+          </div>
+        </li>
       `;
   });
   // Close the container div
-  html += '</div>';
+  html += '</ul>';
 
   document.getElementById('scontrino').innerHTML += html;
 }
