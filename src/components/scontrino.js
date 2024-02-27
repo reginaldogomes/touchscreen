@@ -11,16 +11,16 @@ export function scontrino() {
   ];
 
   // Start the list HTML
-  let html = '<ul class="cart-list">';
+  let html = '<ul class="scontrino-list">';
   // Loop through each product to create its button with an icon
   scontrinos.forEach(scontrino => {
       html += `
-        <li class="cart-item">
-          <div class="cart-item-details">
+        <li class="scontrino-item">
+          <div class="scontrino-item-details">
               <span>${scontrino.name}</span>
               <span>${scontrino.value}</span>
           </div>
-          <div class="cart-item-actions">
+          <div class="scontrino-item-actions">
               <button class="remove-btn">
                 <i class="bi bi-trash"></i>
               </button>
@@ -28,9 +28,6 @@ export function scontrino() {
         </li>
       `;
   });
-  html += `
-    <li>Valor: R$ 300,00</li>
-    `;
   html += '</ul>';
 
   document.getElementById('scontrino').innerHTML += html;

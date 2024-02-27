@@ -1,12 +1,11 @@
-// Define the product list creation function
-
 import '../styles/components/scontrino.scss'
+import icon from '../../public/images/grid.svg'
 
 export function funzioni() {
 
   const scontrinos = [
-    { name: "Pizza", icon: "bi bi-emoji-smile" }, // Replace with appropriate icon class
-    { name: "Sushi", icon: "bi bi-emoji-heart-eyes" } // Replace with appropriate icon class
+    { name: "Pizza", icon: 'bi bi-journal-plus' },
+    { name: "Sushi", icon: icon }
   ];
 
   // Start the list HTML

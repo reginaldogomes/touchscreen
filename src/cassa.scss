@@ -7,7 +7,7 @@
   --accent-color: #e06f2b;
   --accent-color-alpha: rgba(224, 111, 42, 0.1);
 
-  --text-color: #cccbc9;
+  --text-color: #000000;
   --border-color: #cccbc9;
 
   --border-radius: 8px;
@@ -21,6 +21,10 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--text-color);
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -102,21 +106,37 @@ main {
   grid-template-columns: auto auto auto auto;
   overflow-x: hidden;
   overflow-y: auto;
+  height: 70%;
+  max-height: 70%;
+}
+
+.work_area {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  border: 0;
+  height: 15%;
+  max-height: 15%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .scontrino {
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
   border: 0;
+  height: 40%;
+  max-height: 40%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.cart-list {
+.scontrino-list {
   display: flex;
   flex-direction: column;
-  padding: 0 32px 0 32px;
+  padding: 0 8px 0 8px;
 }
 
-.cart-item {
+.scontrino-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -124,19 +144,19 @@ main {
   padding-bottom: 10px;
 }
 
-.cart-item img {
+.scontrino-item img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
-.cart-item-details {
+.scontrino-item-details {
   justify-content: space-between;
   display: flex;
 }
-.cart-item-details:first-child {
+.scontrino-item-details:first-child {
   flex: 2;
 }
-.cart-item-actions {
+.scontrino-item-actions {
   display: flex;
   align-items: center;
 }
@@ -145,22 +165,27 @@ main {
   background-color: transparent;
   cursor: pointer;
 }
-.remove-btn img {
-  width: 16px;
-  height: 16px;
+.remove-btn i {
+  font-size: 24px;
+}
+
+.teclado {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .keypad {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 20px;
+  gap: 2px;
+  padding: 2px;
   background-color: #ddd;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
 }
 .keypad button {
-  padding: 20px;
-  font-size: 1.5rem;
+  padding: 2px;
+  font-size: 2rem;
+  font-weight: bold;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
@@ -219,6 +244,7 @@ footer {
   border-radius: var(--border-radius);
   min-width: 90%;
   border: 1px solid var(--accent-color);
+  text-transform: uppercase;
 }
 
 .button_cat img {
@@ -240,6 +266,7 @@ footer {
   min-width: 90%;
   border: 1px solid var(--border-color);
   gap: 10px;
+  text-transform: uppercase;
 }
 
 .button_prod img {
@@ -261,6 +288,7 @@ footer {
   border-radius: var(--border-radius);
   max-width: 90%;
   gap: 10px;
+  text-transform: uppercase;
 }
 
 .button_func img {
