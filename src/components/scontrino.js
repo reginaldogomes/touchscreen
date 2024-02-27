@@ -28,7 +28,9 @@ export function scontrino() {
         </li>
       `;
   });
-  // Close the container div
+  html += `
+    <li>Valor: R$ 300,00</li>
+    `;
   html += '</ul>';
 
   document.getElementById('scontrino').innerHTML += html;

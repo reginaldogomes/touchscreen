@@ -70,6 +70,7 @@ main {
   flex-direction: column;
   width: 35%;
   padding: 8px;
+  gap: var(--gap);
 }
 
 .divisioni {
@@ -132,6 +133,9 @@ main {
   justify-content: space-between;
   display: flex;
 }
+.cart-item-details:first-child {
+  flex: 2;
+}
 .cart-item-actions {
   display: flex;
   align-items: center;
@@ -144,6 +148,26 @@ main {
 .remove-btn img {
   width: 16px;
   height: 16px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+.keypad button {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.keypad button:hover {
+  background-color: #eaeaea;
 }
 
 .funzioni {

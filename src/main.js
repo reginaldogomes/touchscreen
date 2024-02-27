@@ -22,7 +22,9 @@ document.querySelector('body').innerHTML = `
             <div class="prodotti" id="prodotti"></div>
         </div>
         <div class="right">
+            <div class="work_area" id="work_area">Area di lavoro</div>
             <div class="scontrino" id="scontrino"></div>
+            <div class="teclado" id="teclado"></div>
         </div>
     </div>
     <div class="col-right">
