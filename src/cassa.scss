@@ -42,6 +42,7 @@ main {
   display: flex;
   gap: var(--gap);
   padding: 8;
+  height: 100vh;
 }
 
 .col-center {
@@ -106,8 +107,8 @@ main {
   grid-template-columns: auto auto auto auto;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 70%;
-  max-height: 70%;
+  height: 90%;
+  max-height: 90%;
 }
 
 .work_area {
@@ -124,8 +125,8 @@ main {
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
   border: 0;
-  height: 40%;
-  max-height: 40%;
+  height: 45%;
+  max-height: 45%;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -142,6 +143,7 @@ main {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
+  align-items: center;
 }
 
 .scontrino-item img {
@@ -167,9 +169,11 @@ main {
 }
 .remove-btn i {
   font-size: 24px;
+  color: red;
 }
 
 .teclado {
+  height: auto;
   overflow-x: hidden;
   overflow-y: auto;
 }
