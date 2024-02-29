@@ -23,14 +23,32 @@ document.querySelector('body').innerHTML = `
         </div>
         <div class="right">
             <div class="work_area" id="work_area">
-                <h2>Nuova vendita</h2>
-                <span>Vendita</span>
-                <input id="VENDITA" type="text" readonly="" size="5" maxlength="5" value="40" /> 
-                <span>Sala:</span>
-                <input id="SALA" type="text" size="3" maxlength="3" style="" value="0" />
-                <span>Cameriere</span>
-                <select id="CAMERIERE" >&gt;<option value="">Scegli</option><option value="001">001 - Giulia Tudisco</option><option value="GDG">GDG - Giuseppe  De Giosa</option><option value="PT2">PT2 - Paolo Tintori</option><option value="PP">PP - Paulo Paganelli</option></select>
-                <span>Tavolo:</span><input id="TAVOLO" type="text" size="3" maxlength="3" style="" class="numero" value="0" />
+                <div class="nuova_vendita">
+                    <h2>Nuova vendita</h2>
+                    <div class="box">
+                        <div>
+                            <div>
+                                <label>Vendita</label>
+                                <input id="VENDITA" type="text" readonly="" size="5" maxlength="5" value="40" />
+                            </div>
+                            <div>
+                                <label>Sala:</label>
+                                <input id="SALA" type="text" size="3" maxlength="3" style="" value="0" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Cameriere</label>
+                                <select id="CAMERIERE" >&gt;<option value="">Scegli</option><option value="001">001 - Giulia Tudisco</option><option value="GDG">GDG - Giuseppe  De Giosa</option><option value="PT2">PT2 - Paolo Tintori</option><option value="PP">PP - Paulo Paganelli</option></select>
+                            </div>
+
+                            <div>
+                                <label>Tavolo:</label>
+                                <input id="TAVOLO" type="text" size="3" maxlength="3" style="" class="numero" value="0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="scontrino" id="scontrino"></div>
             <div class="teclado" id="teclado"></div>

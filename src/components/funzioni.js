@@ -5,7 +5,7 @@ export function funzioni() {
 
   const scontrinos = [
     { name: "Pizza", icon: 'bi bi-journal-plus' },
-    { name: "Sushi", icon: icon }
+    { name: "Sushi", icon: 'bi bi-x-circle' }
   ];
 
   // Start the list HTML
@@ -13,7 +13,7 @@ export function funzioni() {
   // Loop through each product to create its button with an icon
   scontrinos.forEach(scontrino => {
       html += `
-          <button class="button_func">
+          <button class="button_func button_anula">
               <i class="${scontrino.icon}"></i> ${scontrino.name}
           </button>
       `;

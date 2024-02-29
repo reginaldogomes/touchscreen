@@ -1,6 +1,6 @@
 export function workArea() {
   // Start the list HTML
-  let html = '<div class="keypad">';
+  let html = '<div class="work_area_nuova">';
   html += `<h2>Nuova vendita</h2>
           <span>Vendita</span>
           <input id="VENDITA" type="text" readonly="" size="5" maxlength="5" value="40" /> 

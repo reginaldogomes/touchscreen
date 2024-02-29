@@ -11,7 +11,7 @@ export function scontrino() {
   ];
 
   // Start the list HTML
-  let html = '<ul class="scontrino-list">';
+  let html = '<h2>Scontrinos</h2><ul class="scontrino-list">';
   // Loop through each product to create its button with an icon
   scontrinos.forEach(scontrino => {
       html += `
