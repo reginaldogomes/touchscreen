@@ -48,7 +48,7 @@ main {
 }
 
 .col-center {
-  width: 75%;
+  width: 78%;
   display: flex;
 }
 
@@ -60,7 +60,7 @@ main {
 }
 
 .col-right {
-  width: 10%;
+  width: 7%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,14 +83,14 @@ main {
 .divisioni {
   background-color: var(--accent-color-alpha);
   display: flex;
-  height: 107px;
+  height: 215px;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
   overflow-y: auto;
   border-radius: var(--border-radius);
   padding: 5px 0 5px;
-  max-height: 107px;
+  max-height: 215px;
 }
 
 .categorie {
@@ -109,8 +109,12 @@ main {
   grid-template-columns: auto auto auto auto;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 90%;
+  /*height: 90%;*/
   max-height: 90%;
+}
+
+.ricerca {
+  padding: 16px 0 16px 0;
 }
 
 .work_area {
@@ -123,32 +127,45 @@ main {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.nuova_vendita {
-  display: flex;
-  flex-direction: column;
+.work_area .dettaglio {
+  font-size: 14px;
+  width: 90%;
+  margin: 0 auto;
 }
-.nuova_vendita h2 {
+
+.work_area .dettaglio tr:not(:first-child) {
+  cursor: pointer;
+}
+
+.work_area .dettaglio tr:first-child {
+  font-weight: bold;
+}
+
+.work_area .dettaglio tr:nth-child(odd):not(:first-child) {
   background-color: var(--accent-color-alpha);
-  padding: 8px;
-  margin: 0;
-  font-size: 16px;
 }
-.nuova_vendita .box {
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
+
+.work_area .dettaglio tbody tr td:nth-child(1) {
+  width: 10%;
 }
-.nuova_vendita .box div {
-  display: flex;
+
+.work_area .dettaglio tbody tr td:nth-child(2) {
+  width: 10%;
 }
-.nuova_vendita .box div div {
-  display: flex;
-  flex-direction: column;
+
+.work_area .dettaglio tbody tr td:nth-child(3) {
+  width: 10%;
+}
+
+.work_area .dettaglio tbody tr td:nth-child(4) {
   width: 50%;
-  flex-grow: 1;
-  flex-shrink: 3;
+}
+
+.work_area .dettaglio tbody tr td:nth-child(5) {
+  width: 10%;
 }
 
 .scontrino {
@@ -170,7 +187,11 @@ main {
 .scontrino-list {
   display: flex;
   flex-direction: column;
-  padding: 0 8px 0 8px;
+  padding: 16px;
+}
+
+.scontrino-item:nth-child(odd) {
+  background-color: var(--accent-color-alpha);
 }
 
 .scontrino-item {
@@ -180,6 +201,7 @@ main {
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
   align-items: center;
+  font-size: 14px;
 }
 
 .scontrino-item img {
@@ -304,6 +326,7 @@ footer {
   cursor: pointer;
   border-radius: var(--border-radius);
   min-width: 90%;
+  max-height: 150px;
   border: 1px solid var(--border-color);
   gap: 10px;
   text-transform: uppercase;
@@ -318,8 +341,10 @@ footer {
   background: var(--primery-color);
   color: var(--text-color);
   padding: 15px 32px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   display: flex;
+  flex-direction: column;
   font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
@@ -331,19 +356,26 @@ footer {
   text-transform: uppercase;
 }
 
-.button_func img {
-  width: 16px;
-  height: 16px;
+.button_func i {
+  font-size: 24px;
 }
 
 .button_annulla {
   background-color: var(--red-color);
   color: var(--white-color);
   border: 1px solid var(--white-color);
+  padding: 8px;
+  border-radius: var(--border-radius);
+  min-width: 90%;
+  width: 90%;
 }
 
 .button_ok {
   background-color: green;
   color: var(--white-color);
   border: 1px solid green;
+  padding: 8px;
+  border-radius: var(--border-radius);
+  min-width: 90%;
+  width: 90%;
 }

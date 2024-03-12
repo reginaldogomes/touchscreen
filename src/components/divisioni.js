@@ -9,6 +9,8 @@ export function divisioni() {
   const divisionis = [
     { name: 'Ristoranti', icon: icon },
     { name: 'Ristoranti', icon: icon },
+    { name: 'Ristoranti', icon: icon },
+    { name: 'Ristoranti', icon: icon },
     { name: 'Mercado', icon: icon }
   ];
 

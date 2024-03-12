@@ -4,7 +4,7 @@ import icon from '../../public/images/grid.svg'
 export function funzioni() {
 
   const scontrinos = [
-    { name: "Pizza", icon: 'bi bi-journal-plus' },
+    { name: "Pizza teste", icon: 'bi bi-journal-plus' },
     { name: "Sushi", icon: 'bi bi-x-circle' }
   ];
 
