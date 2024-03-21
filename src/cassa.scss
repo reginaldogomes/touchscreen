@@ -116,6 +116,12 @@ main {
 .ricerca {
   padding: 16px 0 16px 0;
 }
+.ricerca .ricerca-list .ricerca-item {
+  font-size: 14px;
+}
+.ricerca .ricerca-list .ricerca-item:nth-child(odd):not(:first-child) {
+  background-color: var(--accent-color-alpha);
+}
 
 .work_area {
   background-color: var(--primary-color);
@@ -378,4 +384,20 @@ footer {
   border-radius: var(--border-radius);
   min-width: 90%;
   width: 90%;
+}
+
+.listato {
+  border: 0;
+}
+.listato thead {
+  border: 0;
+}
+.listato thead th {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+.listato tbody tr:nth-child(odd) {
+  background-color: #e9ecef;
 }
