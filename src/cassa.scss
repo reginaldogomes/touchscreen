@@ -388,16 +388,47 @@ footer {
 
 .listato {
   border: 0;
+  width: 100%;
+  font-size: larger;
 }
 .listato thead {
-  border: 0;
+  background-color: var(--accent-color);
 }
 .listato thead th {
-  background-color: #007bff;
+  background-color: var(--accent-color);
   color: white;
-  padding: 15px;
+  padding: 4px 8px;
+}
+.listato thead th:nth-child(1) {
+  width: 10%;
+}
+.listato thead th:nth-child(2) {
+  width: 70%;
   text-align: left;
 }
+.listato thead th:nth-child(3) {
+  width: 10%;
+  text-align: right;
+}
+.listato thead th:nth-child(4) {
+  width: 10%;
+  text-align: right;
+}
 .listato tbody tr:nth-child(odd) {
-  background-color: #e9ecef;
+  background-color: var(--accent-color-alpha);
+}
+.listato tbody td {
+  padding: 4px 8px 4px 8px;
+  cursor: pointer;
+}
+.listato tbody td:nth-child(3) {
+  text-align: right;
+}
+.listato tbody td:nth-child(4) {
+  text-align: right;
+}
+.listato tfoot tr td {
+  text-align: center;
+  font-weight: bold;
+  padding: 16px;
 }
